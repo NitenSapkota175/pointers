@@ -105,15 +105,17 @@ a {
 
 .btn--image{
   background-color: var(--color-main);
+  color: var(--color-dark);
   border: none;
+  display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
   padding: 1rem 1rem 1rem 1rem;
   border-radius: 5px;
   height: 3.5rem;
-  width: 3.5rem;
+  width: 13.5rem;
   margin: 0px 0px 0px 5px;
 }
 .btn--image img{
@@ -146,6 +148,85 @@ a {
   border: 2px solid var(--color-main);
 }
 
+/* post styling */
+.post{
+  display: inline-block;
+  gap: 2rem;
+}
+
+.post-img{
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-img img{
+  border-radius: 50px;
+  border: 0.2rem solid var(--color-success);
+  height: 4.4rem;
+  width: 4.4rem;
+}
+
+.post-text{
+ display: inline-flex;
+ gap: 0.3rem;
+}
+
+.post-text img{
+  background-color: var(--color-main);
+  padding: 1rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 0.3rem;
+}
+
+.post-text input{
+  height: 6rem;
+  width: 50rem;
+  background-color: #ceced2;
+  border: 0;
+  border-radius: 3px;
+}
+
+.post-select ul li{
+   list-style: none;
+   padding: 2rem 0rem 2rem 0rem;
+}
+
+.post-select-ul li{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.post-select-ul li img{
+  height: 2.1rem;
+  width: 2.3rem;
+}
+
+@media only screen and (max-width: 550px ) {
+  .post-text input {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 450px ) {
+  .post-text input {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 380px ) {
+  .post-text input {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 340px ) {
+  .post-text input {
+    width: 28rem;
+  }
+}
+
+/* post styling ends */
 .action-button {
   background: transparent;
   border: none;
