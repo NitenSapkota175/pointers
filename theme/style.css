@@ -149,20 +149,31 @@ a {
 }
 
 /* post styling */
+
+
+.roomlist-post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 10rem;
+
+}
+
 .post{
   display: inline-block;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .post-img{
   display: inline-flex;
   align-items: center;
   gap: 1rem;
+  padding: 0rem 0rem 2rem 0rem;
 }
 
 .post-img img{
   border-radius: 50px;
-  border: 0.2rem solid var(--color-success);
+  border: 0.2rem solid var(--color-main);
   height: 4.4rem;
   width: 4.4rem;
 }
@@ -181,16 +192,23 @@ a {
 }
 
 .post-text input{
-  height: 6rem;
-  width: 50rem;
+  height: 10rem;
+  width: 60rem;
   background-color: #ceced2;
   border: 0;
   border-radius: 3px;
 }
 
+.post-text input::placeholder{
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+}
+
 .post-select ul li{
    list-style: none;
    padding: 2rem 0rem 2rem 0rem;
+   font-size: 1.7rem;
 }
 
 .post-select-ul li{
@@ -200,29 +218,65 @@ a {
 }
 
 .post-select-ul li img{
-  height: 2.1rem;
-  width: 2.3rem;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.post-button{
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.post-button button{
+  background-color: var(--color-main);
+  color: white;
+  border: 0;
+  border-radius:0.1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 60rem;
+}
+
+@media only screen and (max-width: 950px ) {
+  .post-text input {
+    width: 55rem;
+  }
+  .post-button button{
+    width: 55rem;
+  }
 }
 
 @media only screen and (max-width: 550px ) {
   .post-text input {
-    width: 40rem;
+    width: 50rem;
+  }
+  .post-button button{
+    width: 50rem;
   }
 }
 
 @media only screen and (max-width: 450px ) {
   .post-text input {
-    width: 35rem;
+    width: 40rem;
+  }
+  .post-button button{
+    width: 40rem;
   }
 }
 @media only screen and (max-width: 380px ) {
   .post-text input {
-    width: 30rem;
+    width: 35rem;
+  }
+  .post-button button{
+    width: 35rem;
   }
 }
 @media only screen and (max-width: 340px ) {
   .post-text input {
-    width: 28rem;
+    width: 32rem;
+  }
+  .post-button button{
+    width: 32rem;
   }
 }
 
