@@ -78,42 +78,14 @@
         </nav>
       </div>
     </header>
-    <main class="layout layout--3">
+   <main class="layout layout--3">
       <div class="container">
         <!-- Topics Start -->
-        <div class="topics">
-          <div class="topics__header">
-            <h2>Browse Topics</h2>
-          </div>
-          <ul class="topics__list">
-            <li>
-              <a href="/" class="active">All <span>553</span></a>
-            </li>
-            <li>
-              <a href="/">Python <span>232</span></a>
-            </li>
-            <li>
-              <a href="/">JavaScript <span>122</span></a>
-            </li>
-            <li>
-              <a href="/">React <span>57</span></a>
-            </li>
-            <li>
-              <a href="/">Database <span>90</span></a>
-            </li>
-          </ul>
-          <a class="btn btn--link" href="topics.html">
-            More
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-              <title>chevron-down</title>
-              <path d="M16 21l-13-13h-3l16 16 16-16h-3l-13 13z"></path>
-            </svg>
-          </a>
-        </div>
+        <div class="topics"></div>
         <!-- Topics End -->
 
         <!-- Room List Start -->
-        <div class="roomList">
+        <div class="roomList-post">
           <!-- <div class="mobile-menu">
             <form class="header__search">
               <label>
@@ -133,93 +105,35 @@
           </div> -->
 
           <div class="post">
-                <div class="post-img">
-                    <img src="icons/post.png" alt="">
+                <div class="post-img avatar--medium active">
+                    <img src="https://randomuser.me/api/portraits/men/37.jpg">
                     <a href="username/">Roman Tamang</a>
                 </div>
                 <div class="post-text">
                   <input type="text" placeholder="Write somthing here.." value="" name="">
-                  <img src="icons/post.png" alt="">
                 </div>
           </div>
 
           <div class="post-select">
             <ul class="post-select-ul">
-                <li><img src="icons/picture.png" alt=""><a href="#">Photos</a></li>
-                <li><img src="icons/picture.png" alt=""><a href="#">PDF</a></li>
-                <li><img src="icons/picture.png" alt=""><a href="#">Files</a></li>
-                <li><img src="icons/picture.png" alt=""><a href="#">Tag friends</a></li>
+                <li><img src="icons/image.png" alt=""><a href="#">Photos</a></li>
+                <li><img src="icons/pdf.png" alt=""><a href="#">PDF</a></li>
+                <li><img src="icons/document.png" alt=""><a href="#">Files</a></li>
+                <li><img src="icons/friend.png" alt=""><a href="#">Tag friends</a></li>
+                <li><img src="icons/coding.png" alt=""><a href="#">Language</a></li>
             </ul>
           </div>
+
+          <a href="#" class="post-button">
+             <button>POST</button>
+          </a>
         </div>
         <!-- Room List End -->
 
         <!-- Activities Start -->
-        <div class="activities">
-          <div class="activities__header">
-            <h2>Recent Activities</h2>
-          </div>
-          <div class="activities__box">
-            <div class="activities__boxHeader roomListRoom__header">
-              <a href="profile.html" class="roomListRoom__author">
-                <div class="avatar avatar--small">
-                  <img src="https://randomuser.me/api/portraits/women/11.jpg" />
-                </div>
-                <p>
-                  @sulamita_ivy
-                  <span>5 days ago</span>
-                </p>
-              </a>
-              <div class="roomListRoom__actions">
-                <a href="#">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <title>remove</title>
-                    <path
-                      d="M27.314 6.019l-1.333-1.333-9.98 9.981-9.981-9.981-1.333 1.333 9.981 9.981-9.981 9.98 1.333 1.333 9.981-9.98 9.98 9.98 1.333-1.333-9.98-9.98 9.98-9.981z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="activities__boxContent">
-              <p>replied to post “<a href="room.html">100 Days of code challenge!</a>”</p>
-              <div class="activities__boxRoomContent">
-                I’ll have to try this sometime. Really like this idea. Wanna talk about it? I ‘m....
-              </div>
-            </div>
-          </div>
-
-          <div class="activities__box">
-            <div class="activities__boxHeader roomListRoom__header">
-              <a href="profile.html" class="roomListRoom__author">
-                <div class="avatar avatar--small active">
-                  <img src="https://randomuser.me/api/portraits/men/13.jpg" />
-                </div>
-                <p>
-                  @mr_spshuvo
-                  <span>5 days ago</span>
-                </p>
-              </a>
-              <div class="roomListRoom__actions">
-                <a href="#">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <title>remove</title>
-                    <path
-                      d="M27.314 6.019l-1.333-1.333-9.98 9.981-9.981-9.981-1.333 1.333 9.981 9.981-9.981 9.98 1.333 1.333 9.981-9.98 9.98 9.98 1.333-1.333-9.98-9.98 9.98-9.981z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="activities__boxContent">
-              <p>replied to post “<a href="room.html">100 Days of code challenge!</a>”</p>
-              <div class="activities__boxRoomContent">
-                I’ll have to try this sometime. Really like this idea. Wanna talk about it? I ‘m....
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="activities"></div>
         <!-- Activities End -->
+      </div>
       </div>
     </main>
     <script src="script.js"></script>
