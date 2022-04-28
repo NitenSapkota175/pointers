@@ -44,6 +44,44 @@
 
 // Menu
 
+document.getElementById("openComment").onclick = function() {
+  myFunction("commentOpen");
+}
+
+function myFunction(p1)
+{
+  console.log(p1)
+  var open = document.getElementById(p1);
+  if(open.style.display === 'none')
+  {
+    open.style.display = "block";
+  }
+  else
+  {
+    open.style.display = "none";
+  }
+}
+
+
+function submit()
+{
+  var inputText = document.getElementById('inputText');
+  var inputData = inputText.value.split('\n');
+  var listContainer = document.getElementById('list'),
+  listData = createElement('ul');
+  listContainer.appendChild(listData);
+
+  var numberOfData = inputData.length;
+  var listItem;
+
+  for(var i = 0; i < numberOfData; ++i)
+  {
+    listItem = createElement('li');
+    listItem.innerHtml = inputData[i];
+    listData.appendChild(listItem);
+  }
+}
+
 const dropdownMenu = document.querySelector(".dropdown-menu");
 const dropdownButton = document.querySelector(".dropdown-button");
 
